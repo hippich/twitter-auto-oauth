@@ -1,0 +1,37 @@
+{
+  "name": "twitter-auto-oauth",
+  "version": "0.0.1",
+  "description": "Using just username/password get oauth_access and oauth_access_secret tokens to use with twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "DEBUG=* ./node_modules/.bin/mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hippich/twitter-auto-oauth.git"
+  },
+  "keywords": [
+    "twitter",
+    "webdriver",
+    "oauth"
+  ],
+  "author": "Pavel Karoukin <pavel@karoukin.us> (http://pavel.karoukin.us/)",
+  "license": "AGPLv3",
+  "bugs": {
+    "url": "https://github.com/hippich/twitter-auto-oauth/issues"
+  },
+  "homepage": "https://github.com/hippich/twitter-auto-oauth",
+  "dependencies": {
+    "bluebird": "^2.9.24",
+    "debug": "^2.1.3",
+    "lodash": "^3.7.0",
+    "oauth": "^0.9.12",
+    "portfinder": "^0.4.0",
+    "webdriverio": "^2.4.5",
+    "zombie": "^4.0.7"
+  },
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.4"
+  }
+}

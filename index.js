@@ -41,6 +41,13 @@ var TAuth = function(options) {
         authPromise = authPromise.then(this.startAuthentication.bind(this));
     }
 
+    // Make sure to close server on success or if something fails
+    authPromise.then(function() {
+        that.server.close();
+    }).catch(function() {
+        that.server.close();
+    });
+
     return authPromise;
 };
 
